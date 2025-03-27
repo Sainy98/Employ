@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+/* Centering the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  
+}
+
+/* Login Box */
+.login-box {
+  background: #fff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: -122px;
+}
+
+/* Title */
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+.input-group input {
+  width: 85%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* End of Login  */
+/* User List Container */
+.user-container {
+  width: 80%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.user-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.user-title:hover {
+  color: #007bff;
+}
+
+/* Table Styling */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+
+}
+
+.user-table th {
+  background: #007bff;
+  color: white;
+  text-transform: uppercase;
+}
+
+.user-table td {
+  background: #f9f9f9;
+}
+
+/* Avatar */
+.user-avatar {
+
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-avatar:hover {
+  transform: scale(1.1);
+}
+
+/* 3D Hover Effect on Table Rows */
+.user-table tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+
+.user-table tbody tr:hover {
+  transform: scale(1.02) translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  background: #f1f1f1;
+}
+
+
+/* Buttons */
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-btn {
+  width: 80px;
+  background: #28a745;
+  color: white;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Special Effects */
+.bounce {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.shake {
+  transition: transform 0.2s ease-in-out;
+}
+
+.shake:hover {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+}
+
+.zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.slide {
+  transition: all 0.3s ease-in-out;
+}
+
+.slide:hover {
+  transform: translateY(-2px);
+}
+
+/* Pagination Buttons */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+}
+
+.page-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.page-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+/* end of user list */
+
+
+/* Edit User Container */
+.edit-user-container {
+  max-width:300px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.edit-user-container:hover {
+  transform: scale(1.02);
+}
+
+/* Title */
+.user-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.edit-user-container input {
+  width: 93%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.edit-user-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit Button */
+.edit-user-container button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.edit-user-container button:hover {
+  background: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.edit-user-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+
+/* Responsive Table */
+
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .table-container {
+    width: 100%;
+   
+  }
+
+  table {
+    width: 100%;
+  
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+thead{
+  display: none;
+}
+  /* Stack table data for smaller screens */
+  tbody tr {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  tbody tr td {
+    display: flex;
+            justify-content: center;
+  }
+
+  tbody tr td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  /* Buttons */
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+}
